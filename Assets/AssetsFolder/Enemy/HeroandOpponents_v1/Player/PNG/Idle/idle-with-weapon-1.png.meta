@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      idle-with-weapon-1_0: -1385982815321876491
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

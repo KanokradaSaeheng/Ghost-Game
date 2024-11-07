@@ -209,7 +209,11 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spr_enemy_mud_hurt_strip4_0: 2426680590671659562
+      spr_enemy_mud_hurt_strip4_1: 174331052662599231
+      spr_enemy_mud_hurt_strip4_2: -5821424318176595447
+      spr_enemy_mud_hurt_strip4_3: -543981943749288368
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
