@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spr_enemy_finalboss_ice_strip6_0: -7775212990445353438
+      spr_enemy_finalboss_ice_strip6_1: 8712420871719191971
+      spr_enemy_finalboss_ice_strip6_2: -8908313966744144253
+      spr_enemy_finalboss_ice_strip6_3: -870568627528596695
+      spr_enemy_finalboss_ice_strip6_4: -2164537213406185991
+      spr_enemy_finalboss_ice_strip6_5: 8820979377632390530
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -259,7 +259,13 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spr_enemy_finalboss_flying_strip6_0: -5701808312123830499
+      spr_enemy_finalboss_flying_strip6_1: 8827992273569736127
+      spr_enemy_finalboss_flying_strip6_2: 7213342612547567592
+      spr_enemy_finalboss_flying_strip6_3: 8097000711454394585
+      spr_enemy_finalboss_flying_strip6_4: 6928813942946083872
+      spr_enemy_finalboss_flying_strip6_5: -8044816679955395238
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
