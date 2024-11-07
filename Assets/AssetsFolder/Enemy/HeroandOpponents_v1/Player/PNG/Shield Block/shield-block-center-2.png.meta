@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      shield-block-center-2_0: 3885306786164673067
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

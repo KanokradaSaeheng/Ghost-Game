@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      spr_enemy_finalboss_hurt_strip2_0: 5884492091751412494
+      spr_enemy_finalboss_hurt_strip2_1: 720015279657985752
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

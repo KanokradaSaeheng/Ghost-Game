@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      cover-image-vagabond_0: 9121200042632146532
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
