@@ -20,6 +20,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Da_Work_Folder/Credits_Scene.unity
     guid: 1aa25f818641e644facb57e2197bf2cc
+  - enabled: 1
+    path: Assets/Nin_Work_folder/Scene/Scence_Village.unity
+    guid: cabc4f9653751c6418af0bf9b634e876
+  - enabled: 1
+    path: Assets/Nin_Work_folder/Scene/Scence_cave.unity
+    guid: 379d37f557b5f0644a36c218e7cac7f5
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

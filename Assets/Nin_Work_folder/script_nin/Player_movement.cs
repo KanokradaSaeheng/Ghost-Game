@@ -10,7 +10,7 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private bool isGrounded;
 
-    public float groundCheckDistance = 0.1f; // ?????????? ray ???????????????
+    public float groundCheckDistance = 0.1f; // ระยะของ Raycast
     public LayerMask groundLayer;
 
     void Start()
@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        // ??? ray ??????????????????????????????
+        // Function สำหรับตรวจจับว่าจะกระโดดได้ไหม
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, groundLayer);
 
         if (Input.GetButtonDown("Jump") && isGrounded)
@@ -50,7 +50,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        // ??????? ray ?? Scene view ??????????? groundCheckDistance
+        // Function สำหรับสร้างเส้นตรงสีแดงของ Raycast
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + Vector3.down * groundCheckDistance);
     }
