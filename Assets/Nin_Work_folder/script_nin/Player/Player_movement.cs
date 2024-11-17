@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float runSpeed = 8f; // ความเร็วเมื่อวิ่ง
     public float jumpForce = 10f;
 
     private Rigidbody2D rb;
@@ -27,7 +28,11 @@ public class PlayerMovement : MonoBehaviour
     void Move()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-        Vector2 move = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+
+        // ตรวจสอบว่ากด Shift หรือไม่
+        float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : moveSpeed;
+
+        Vector2 move = new Vector2(horizontalInput * currentSpeed, rb.linearVelocity.y);
         rb.linearVelocity = move;
 
         // Flip sprite when moving left or right
