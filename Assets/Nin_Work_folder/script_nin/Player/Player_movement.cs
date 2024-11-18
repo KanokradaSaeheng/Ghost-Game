@@ -5,12 +5,13 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public float moveSpeed = 5f;
+    public float runSpeed = 8f; // ความเร็วเมื่อวิ่ง
     public float jumpForce = 10f;
 
     private Rigidbody2D rb;
     private bool isGrounded;
 
-    public float groundCheckDistance = 0.1f; // ?????????? ray ???????????????
+    public float groundCheckDistance = 0.1f; // ระยะของ Raycast
     public LayerMask groundLayer;
 
     void Start()
@@ -27,7 +28,11 @@ public class PlayerMovement : MonoBehaviour
     void Move()
     {
         float horizontalInput = Input.GetAxis("Horizontal");
-        Vector2 move = new Vector2(horizontalInput * moveSpeed, rb.linearVelocity.y);
+
+        // ตรวจสอบว่ากด Shift หรือไม่
+        float currentSpeed = Input.GetKey(KeyCode.LeftShift) ? runSpeed : moveSpeed;
+
+        Vector2 move = new Vector2(horizontalInput * currentSpeed, rb.linearVelocity.y);
         rb.linearVelocity = move;
 
         // Flip sprite when moving left or right
@@ -39,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
 
     void Jump()
     {
-        // ??? ray ??????????????????????????????
+        // Function สำหรับตรวจจับว่าจะกระโดดได้ไหม
         isGrounded = Physics2D.Raycast(transform.position, Vector2.down, groundCheckDistance, groundLayer);
 
         if (Input.GetButtonDown("Jump") && isGrounded)
@@ -50,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
 
     void OnDrawGizmos()
     {
-        // ??????? ray ?? Scene view ??????????? groundCheckDistance
+        // Function สำหรับสร้างเส้นตรงสีแดงของ Raycast
         Gizmos.color = Color.red;
         Gizmos.DrawLine(transform.position, transform.position + Vector3.down * groundCheckDistance);
     }
