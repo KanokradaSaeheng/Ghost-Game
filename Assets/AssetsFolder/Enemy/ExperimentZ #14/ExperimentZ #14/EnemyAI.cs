@@ -11,6 +11,7 @@ public class EnemyAI : MonoBehaviour
     private Animator animator;           // ตัวแปร Animator
     private float attackTimer = 0f;      // ตัวจับเวลาโจมตี
     private bool isAttacking = false;    // เช็คว่ากำลังโจมตีหรือไม่
+    private bool isFacingRight = true;   // ตรวจสอบว่ากำลังหันขวาอยู่หรือไม่
 
     void Start()
     {
@@ -40,6 +41,9 @@ public class EnemyAI : MonoBehaviour
         {
             attackTimer -= Time.deltaTime;
         }
+
+        // เช็คและปรับการ Flip ศัตรู
+        CheckFlip();
     }
 
     void MoveTowardsPlayer()
@@ -89,5 +93,26 @@ public class EnemyAI : MonoBehaviour
         }
 
         StopAttack(); // หยุดโจมตีหลังสร้างความเสียหาย
+    }
+
+    void CheckFlip()
+    {
+        // ตรวจสอบว่าผู้เล่นอยู่ด้านซ้ายหรือขวาของศัตรู
+        if (player.position.x > transform.position.x && isFacingRight)
+        {
+            Flip(); // Flip ให้หันซ้าย
+        }
+        else if (player.position.x < transform.position.x && !isFacingRight)
+        {
+            Flip(); // Flip ให้หันขวา
+        }
+    }
+
+    void Flip()
+    {
+        isFacingRight = !isFacingRight; // สลับสถานะการหัน
+        Vector3 localScale = transform.localScale; // เข้าถึงขนาดของ GameObject
+        localScale.x *= -1; // กลับด้านแกน X
+        transform.localScale = localScale; // ตั้งค่าขนาดใหม่
     }
 }

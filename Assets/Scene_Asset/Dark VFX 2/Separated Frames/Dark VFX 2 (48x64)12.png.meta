@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Dark VFX 2 (48x64)12_0: 8235025901553602652
+      Dark VFX 2 (48x64)12_1: 7688225317270593410
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
