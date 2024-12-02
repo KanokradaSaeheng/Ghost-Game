@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Nin_Work_folder/Scene/Scence_cave.unity
     guid: 379d37f557b5f0644a36c218e7cac7f5
+  - enabled: 1
+    path: Assets/Nin_Work_folder/Scene/Scence_Lab.unity
+    guid: c0ed40f619be2414593cb0d13b5c1464
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

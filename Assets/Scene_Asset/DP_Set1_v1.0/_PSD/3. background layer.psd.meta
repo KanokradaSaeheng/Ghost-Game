@@ -1059,7 +1059,45 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      3. background layer_0: -6586654652262616558
+      3. background layer_1: -4518074896957913624
+      3. background layer_10: 3472229854940517480
+      3. background layer_11: -3542886772444624457
+      3. background layer_12: -3606580189551292618
+      3. background layer_13: 6581817011057473340
+      3. background layer_14: 8950140254205659260
+      3. background layer_15: -7603272467930430803
+      3. background layer_16: 1746115121346291089
+      3. background layer_17: 535812129415980526
+      3. background layer_18: -7079445811985786700
+      3. background layer_19: -1642725707132229530
+      3. background layer_2: 8670426433179326281
+      3. background layer_20: 6244745188983528562
+      3. background layer_21: -1955881702846414966
+      3. background layer_22: 1939741322678072603
+      3. background layer_23: -4829601065484144282
+      3. background layer_24: -6872789620939513422
+      3. background layer_25: 4983548382118275975
+      3. background layer_26: 9154729033343852114
+      3. background layer_27: -209164202340192913
+      3. background layer_28: -3086355255234240003
+      3. background layer_29: -3967370677730944213
+      3. background layer_3: 3147393396123601135
+      3. background layer_30: -3816500867750813387
+      3. background layer_31: -3145552796666994698
+      3. background layer_32: 4373874139519145562
+      3. background layer_33: 5861884417036506059
+      3. background layer_34: -6944809050213725358
+      3. background layer_35: 4545769636062843216
+      3. background layer_36: -5734591513639425410
+      3. background layer_37: 9044608862816451947
+      3. background layer_4: -1034852111925473638
+      3. background layer_5: -7171212893201404285
+      3. background layer_6: -8819511293352204397
+      3. background layer_7: -2488533029840150379
+      3. background layer_8: -9149578507773366581
+      3. background layer_9: -163750000021218504
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
