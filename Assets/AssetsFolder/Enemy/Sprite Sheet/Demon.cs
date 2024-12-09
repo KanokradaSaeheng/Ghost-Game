@@ -2,9 +2,9 @@ using UnityEngine;
 
 public class Demon : MonoBehaviour
 {
-    public Transform player;             // อ้างอิงตำแหน่งของผู้เล่น
-    public float moveSpeed = 3f;         // ความเร็วในการเคลื่อนที่ของมอนสเตอร์
-    public float stoppingDistance = 1f;  // ระยะห่างที่มอนสเตอร์จะหยุดตามผู้เล่น
+    public Transform player;             
+    public float moveSpeed = 3f;         
+    public float stoppingDistance = 1f;  
 
     private Animator animator;           // ตัวแปรสำหรับ Animator
 
