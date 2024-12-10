@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Main_Scene.unity
     guid: 7ae2bbbf6b2f0704fbd1f73c6fd073f1
   - enabled: 1
-    path: Assets/Da_Work_Folder/Settings_Menu.unity
+    path: Assets/Da_Work_Folder/Options_Menu.unity
     guid: c95a1029b5896ef43abcdaac9bb2756d
   - enabled: 1
     path: Assets/Da_Work_Folder/Credits_Scene.unity
