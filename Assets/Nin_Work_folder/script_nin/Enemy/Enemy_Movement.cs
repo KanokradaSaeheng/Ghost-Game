@@ -5,6 +5,7 @@ public class Enemy_Movement : MonoBehaviour
     [Header("Movement Settings")]
     public float speed = 2f; // ความเร็วในการเดิน
     public float patrolTime = 3f; // เวลาที่เดินไปในแต่ละทิศทาง
+    public float waitTime = 2f; // เวลาที่หยุดเดิน
 
     [Header("Detection Settings")]
     public Transform player; // ตัวผู้เล่น
@@ -16,17 +17,20 @@ public class Enemy_Movement : MonoBehaviour
     public float groundCheckRadius = 0.2f; // รัศมีตรวจสอบพื้น
 
     private float patrolTimer;
+    private float waitTimer;
     private bool isFacingRight = true; // Enemy หันไปทางขวา
     private bool isGrounded;
+    private bool isWaiting = false; // สถานะ "หยุดเดิน"
     private Rigidbody2D rb;
 
-    // Animation 
+    // Animation
     private Animator animator;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         patrolTimer = patrolTime; // เริ่มต้นการเดินแบบ Patrol
+        waitTimer = waitTime; // ตั้งค่าช่วงเวลาที่หยุดเดิน
         animator = GetComponent<Animator>();
     }
 
@@ -60,24 +64,41 @@ public class Enemy_Movement : MonoBehaviour
 
         animator.SetBool("Running", true);
         animator.SetBool("Idle", false);
-        // animator.SetBool("isAttack", false);
     }
 
     private void Patrol()
     {
-        // เดินซ้าย-ขวาเมื่อไม่พบผู้เล่น
-        patrolTimer -= Time.deltaTime;
-
-        if (patrolTimer <= 0)
+        if (isWaiting)
         {
-            Flip();
-            patrolTimer = patrolTime;
-        }
+            waitTimer -= Time.deltaTime;
 
-        rb.linearVelocity = new Vector2((isFacingRight ? 1 : -1) * speed, rb.linearVelocity.y);
-        animator.SetBool("Running", true);
-        animator.SetBool("Idle", false);
-        animator.SetBool("isAttack", false);
+            // เมื่อเวลาหยุดเดินหมด
+            if (waitTimer <= 0)
+            {
+                isWaiting = false;
+                patrolTimer = patrolTime; // รีเซ็ตเวลาสำหรับเดิน
+            }
+
+            rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); // หยุดการเคลื่อนไหว
+            animator.SetBool("Running", false);
+            animator.SetBool("Idle", true);
+        }
+        else
+        {
+            patrolTimer -= Time.deltaTime;
+
+            // เมื่อเวลาสำหรับเดินหมด
+            if (patrolTimer <= 0)
+            {
+                Flip();
+                isWaiting = true; // เปลี่ยนสถานะเป็นหยุด
+                waitTimer = waitTime; // รีเซ็ตเวลาหยุด
+            }
+
+            rb.linearVelocity = new Vector2((isFacingRight ? 1 : -1) * speed, rb.linearVelocity.y);
+            animator.SetBool("Running", true);
+            animator.SetBool("Idle", false);
+        }
     }
 
     private void Flip()
@@ -111,15 +132,16 @@ public class Enemy_Movement : MonoBehaviour
         if (collision.gameObject.CompareTag("Player"))
         {
             // เริ่มอนิเมชั่นโจมตี
-            animator.SetBool("isAttack" , true);
+            animator.SetBool("isAttack", true);
             animator.SetBool("Running", false);
-
+            animator.SetBool("Idle", false);
         }
         else
         {
             animator.SetBool("isAttack", false);
-        }
+            animator.SetBool("Idle", true);
+            animator.SetBool("Running", false);
 
+        }
     }
 }
-    
