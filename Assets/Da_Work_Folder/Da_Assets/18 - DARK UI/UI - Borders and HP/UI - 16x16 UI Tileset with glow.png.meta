@@ -592,10 +592,10 @@ TextureImporter:
       name: UI - 16x16 UI Tileset with glow_15
       rect:
         serializedVersion: 2
-        x: 170
-        y: 131
-        width: 44
-        height: 10
+        x: 172
+        y: 133
+        width: 20
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -636,10 +636,10 @@ TextureImporter:
       name: UI - 16x16 UI Tileset with glow_17
       rect:
         serializedVersion: 2
-        x: 234
-        y: 132
-        width: 44
-        height: 10
+        x: 236
+        y: 134
+        width: 20
+        height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -664,7 +664,7 @@ TextureImporter:
         height: 6
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 2, y: 2, z: 2, w: 2}
       customData: 
       outline: []
       physicsShape: []
