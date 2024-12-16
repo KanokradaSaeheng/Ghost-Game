@@ -1,22 +1,19 @@
 fileFormatVersion: 2
-guid: ac3366b472910e141b9962dbaf9a2a52
+guid: 02ebea69f2fbcf5479eb87c3e9ea7961
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4014450623071091910
-    second: level_tileset_0
+      213: 8287873616420496286
+    second: clouds_0
   - first:
-      213: -4975021477619845978
-    second: level_tileset_1
+      213: 7911139459876737251
+    second: clouds_1
   - first:
-      213: 1151280542118277349
-    second: level_tileset_2
+      213: -1115256706364395465
+    second: clouds_2
   - first:
-      213: -8261023128934220580
-    second: level_tileset_3
-  - first:
-      213: -7438090563304642252
-    second: level_tileset_4
+      213: -477254976604553037
+    second: clouds_3
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -63,7 +60,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 32
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -112,13 +109,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: level_tileset_0
+      name: clouds_0
       rect:
         serializedVersion: 2
-        x: 194
-        y: 45
-        width: 95
-        height: 157
+        x: 375
+        y: 987
+        width: 426
+        height: 210
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -127,8 +124,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6cc7f7c729136b730800000000000000
-      internalID: 4014450623071091910
+      spriteID: e936312a421740370800000000000000
+      internalID: 8287873616420496286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clouds_1
+      rect:
+        serializedVersion: 2
+        x: 1267
+        y: 919
+        width: 446
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e0578a7c630acd60800000000000000
+      internalID: 7911139459876737251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clouds_2
+      rect:
+        serializedVersion: 2
+        x: 2303
+        y: 987
+        width: 426
+        height: 210
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73037c73fefc580f0800000000000000
+      internalID: -1115256706364395465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clouds_3
+      rect:
+        serializedVersion: 2
+        x: 3299
+        y: 919
+        width: 446
+        height: 190
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b0c23c90237069f0800000000000000
+      internalID: -477254976604553037
       vertices: []
       indices: 
       edges: []
@@ -137,7 +200,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 50ba9ac001785f946bb193252f6bdff9
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -146,8 +209,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      level_tileset_0: 4014450623071091910
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
