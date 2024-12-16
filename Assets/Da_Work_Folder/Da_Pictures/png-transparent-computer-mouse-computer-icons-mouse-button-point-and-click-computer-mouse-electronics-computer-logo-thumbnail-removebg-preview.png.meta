@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      png-transparent-computer-mouse-computer-icons-mouse-button-point-and-click-computer-mouse-electronics-computer-logo-thumbnail-removebg-preview_0: -3330240751476657430
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
