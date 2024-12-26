@@ -459,7 +459,21 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      torch_nyknck_0: 5977102175690389222
+      torch_nyknck_1: -215152460716752283
+      torch_nyknck_10: 563936624992295999
+      torch_nyknck_11: -4595319850221780838
+      torch_nyknck_12: 4073297798148897041
+      torch_nyknck_13: 3875827864383543464
+      torch_nyknck_2: -8560118199019681289
+      torch_nyknck_3: -292188882435411878
+      torch_nyknck_4: 8992432898624454791
+      torch_nyknck_5: -1354533961675806505
+      torch_nyknck_6: 5940185202625694688
+      torch_nyknck_7: 6625198824013513947
+      torch_nyknck_8: 8674137092250223206
+      torch_nyknck_9: -1987157333012298086
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
