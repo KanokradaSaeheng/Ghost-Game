@@ -109,7 +109,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -123,7 +123,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 27
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -734,7 +734,32 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GhostAttack_0: -3987011388434069450
+      GhostAttack_1: -2977981801198352798
+      GhostAttack_10: 3227886108039137706
+      GhostAttack_11: -600779573976368089
+      GhostAttack_12: -3677077183617130894
+      GhostAttack_13: -7186228750930407608
+      GhostAttack_14: -6320047653757666832
+      GhostAttack_15: 547144789982212347
+      GhostAttack_16: 225946613054682001
+      GhostAttack_17: 4672445418232078483
+      GhostAttack_18: 1755132956714136909
+      GhostAttack_19: -7805455064366138726
+      GhostAttack_2: 4295156431522766159
+      GhostAttack_20: -6539357883184597996
+      GhostAttack_21: 7762089730153799669
+      GhostAttack_22: -4965805558283961604
+      GhostAttack_23: 4309556553470073959
+      GhostAttack_24: -7820115813561228503
+      GhostAttack_3: -6958155311487899049
+      GhostAttack_4: 126941894561724354
+      GhostAttack_5: 3649775347473315381
+      GhostAttack_6: -2507167913032170531
+      GhostAttack_7: 297487058799308543
+      GhostAttack_8: -838414800414141731
+      GhostAttack_9: -4639805390374924788
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

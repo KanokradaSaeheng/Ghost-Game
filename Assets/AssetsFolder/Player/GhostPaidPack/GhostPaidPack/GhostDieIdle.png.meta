@@ -94,7 +94,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -108,7 +108,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 27
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -609,7 +609,27 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      GhostDieIdle_0: -8435819498973865923
+      GhostDieIdle_1: 2201035370226440790
+      GhostDieIdle_10: 7447336643194160126
+      GhostDieIdle_11: -1765914945567536497
+      GhostDieIdle_12: 5098783258518551452
+      GhostDieIdle_13: 2459152224242114402
+      GhostDieIdle_14: 73897941172018308
+      GhostDieIdle_15: 2944436086561060493
+      GhostDieIdle_16: -5759720874071953086
+      GhostDieIdle_17: -6017825343807773766
+      GhostDieIdle_18: -2023902980430895195
+      GhostDieIdle_19: 8440678540972916003
+      GhostDieIdle_2: -292774119214667050
+      GhostDieIdle_3: 6783909756404640761
+      GhostDieIdle_4: 6210786237849553419
+      GhostDieIdle_5: -3492305289798211905
+      GhostDieIdle_6: -3589286649076262628
+      GhostDieIdle_7: 8066578629801889979
+      GhostDieIdle_8: -8060011006214442950
+      GhostDieIdle_9: -6037322012180102216
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

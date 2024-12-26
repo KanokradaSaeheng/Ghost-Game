@@ -14,6 +14,9 @@ GameObject:
   - component: {fileID: 3503259679342032340}
   - component: {fileID: 9156766060811978647}
   - component: {fileID: 8823618389419265891}
+  - component: {fileID: 1820728483856115539}
+  - component: {fileID: 5581911795529715222}
+  - component: {fileID: 1539075849104194472}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -83,7 +86,7 @@ SpriteRenderer:
   m_SortingLayerID: 521741285
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 207ee8102dd4143d288186ef0be518ee, type: 3}
+  m_Sprite: {fileID: -6293200730106278770, guid: 37eec970b1bbec14b81b7e1160dd0697, type: 3}
   m_Color: {r: 0, g: 1, b: 0.9668832, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -107,7 +110,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
+  runSpeed: 8
   jumpForce: 6
+  dashDistance: 10
+  dashDuration: 0.5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 0
   groundCheckDistance: 1.23
   groundLayer:
     serializedVersion: 2
@@ -188,10 +197,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4169b7c80af50984292a4c5ad3f53922, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletPrefab: {fileID: 2433614620921887198, guid: 58c88b9069a63984998438fe7c7b1dc9, type: 3}
+  bulletPrefab: {fileID: 1148072852955196338, guid: 79ff7c168634596469181b878c95b13e, type: 3}
   firePoint: {fileID: 5823810934272530601}
   bulletSpeed: 40
   bullet_destroy: 0.5
+--- !u!95 &1820728483856115539
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178387087880204483}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 92583392b3bb67b4ca2e9d26ec4e1e8b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5581911795529715222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178387087880204483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a10bcd9f5cd4cfa4cb7e3b84a5bd0662, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHP: 100
+--- !u!114 &1539075849104194472
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 178387087880204483}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 797d2c885b51e6f428d7d78b9175ad27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+  damageAmount: 1
+  healthBarImage: {fileID: 0}
+  playerAnimator: {fileID: 1820728483856115539}
+  deathDelay: 1.5
 --- !u!1 &1402754101138426154
 GameObject:
   m_ObjectHideFlags: 0
