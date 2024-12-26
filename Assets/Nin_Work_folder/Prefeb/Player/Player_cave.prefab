@@ -110,6 +110,7 @@ GameObject:
   - component: {fileID: 2824563334933407049}
   - component: {fileID: 5594710793132589156}
   - component: {fileID: 3773555191187181979}
+  - component: {fileID: 8204617396338872923}
   m_Layer: 0
   m_Name: Player_cave
   m_TagString: Player
@@ -348,6 +349,24 @@ MonoBehaviour:
   healthBarImage: {fileID: 0}
   playerAnimator: {fileID: 2824563334933407049}
   deathDelay: 1.5
+--- !u!114 &8204617396338872923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3700819886211313158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d952dbfd08e2104eb24dd95cf31bb12, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  transparencyLevel: 0.5
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  playerCollider: {fileID: 4581878257389387244}
+  spriteRenderer: {fileID: 6551537576576158323}
 --- !u!1 &3870839900932447843
 GameObject:
   m_ObjectHideFlags: 0
