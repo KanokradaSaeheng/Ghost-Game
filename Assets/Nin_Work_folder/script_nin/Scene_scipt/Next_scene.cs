@@ -12,7 +12,7 @@ public class SceneTransitionOnCollision : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             // โหลดฉากใหม่ที่กำหนดไว้
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(7);
         }
     }
 }

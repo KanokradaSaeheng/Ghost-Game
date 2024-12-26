@@ -10,6 +10,7 @@ public class Enemy_Movement : MonoBehaviour
     [Header("Detection Settings")]
     public Transform player; // ตัวผู้เล่น
     public float detectionRange = 5f; // ระยะที่ Enemy จะเดินตามผู้เล่น
+    private bool canDetectPlayer = true; // Whether the enemy can detect the player
 
     [Header("Physics Settings")]
     public LayerMask groundLayer; // Layer ของพื้น
@@ -39,15 +40,22 @@ public class Enemy_Movement : MonoBehaviour
         // ตรวจสอบว่าอยู่บนพื้นหรือไม่
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
 
-        float distanceToPlayer = Vector2.Distance(transform.position, player.position);
-
-        if (distanceToPlayer <= detectionRange)
+        if (canDetectPlayer)
         {
-            FollowPlayer();
+            float distanceToPlayer = Vector2.Distance(transform.position, player.position);
+
+            if (distanceToPlayer <= detectionRange)
+            {
+                FollowPlayer();
+            }
+            else
+            {
+                Patrol();
+            }
         }
         else
         {
-            Patrol();
+            Patrol(); // Continue patrolling even if detection is disabled
         }
     }
 
@@ -60,6 +68,8 @@ public class Enemy_Movement : MonoBehaviour
             Flip();
 
         Vector2 targetVelocity = new Vector2((player.position.x > transform.position.x ? 1 : -1) * speed, rb.linearVelocity.y);
+        rb.linearVelocity = targetVelocity;  // Change to linearVelocity to avoid warning
+        // Replace above line with:
         rb.linearVelocity = targetVelocity;
 
         animator.SetBool("Running", true);
@@ -127,6 +137,18 @@ public class Enemy_Movement : MonoBehaviour
         }
     }
 
+    // This method is called to disable detection of the player
+    public void DisableDetection()
+    {
+        canDetectPlayer = false;
+    }
+
+    // This method is called to re-enable detection of the player
+    public void EnableDetection()
+    {
+        canDetectPlayer = true;
+    }
+
     public void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
@@ -141,7 +163,6 @@ public class Enemy_Movement : MonoBehaviour
             animator.SetBool("isAttack", false);
             animator.SetBool("Idle", true);
             animator.SetBool("Running", false);
-
         }
     }
 }

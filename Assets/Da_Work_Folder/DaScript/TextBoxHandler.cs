@@ -26,8 +26,8 @@ public class TextBoxHandler : MonoBehaviour
 
     void Update()
     {
-        // Check if the left mouse button is clicked
-        if (Input.GetMouseButtonDown(0))
+        // Check if the right mouse button is clicked
+        if (Input.GetMouseButtonDown(1))
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
