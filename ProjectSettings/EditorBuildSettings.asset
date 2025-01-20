@@ -9,22 +9,22 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Da_Work_Folder/Da_Scenes/Main_Menu.unity
+    path: Assets/Da/Da_Work_Folder/Da_Scenes/Main_Menu.unity
     guid: d58850fb70c02b841a750c9e35e1c4b2
   - enabled: 1
     path: Assets/Scenes/Main_Scene.unity
     guid: 7ae2bbbf6b2f0704fbd1f73c6fd073f1
   - enabled: 1
-    path: Assets/Da_Work_Folder/Da_Scenes/Credits_Scene.unity
+    path: Assets/Da/Da_Work_Folder/Da_Scenes/Credits_Scene.unity
     guid: 1aa25f818641e644facb57e2197bf2cc
   - enabled: 1
-    path: Assets/Da_Work_Folder/Da_Scenes/Options_Menu.unity
+    path: Assets/Da/Da_Work_Folder/Da_Scenes/Options_Menu.unity
     guid: c95a1029b5896ef43abcdaac9bb2756d
   - enabled: 1
-    path: Assets/Da_Work_Folder/Da_Scenes/Gallery_Menu.unity
+    path: Assets/Da/Da_Work_Folder/Da_Scenes/Gallery_Menu.unity
     guid: 017dc31e3f9a20946a3826abe1aa7f13
   - enabled: 1
-    path: Assets/Da_Work_Folder/Da_Scenes/Promote_Menu.unity
+    path: Assets/Da/Da_Work_Folder/Da_Scenes/Promote_Menu.unity
     guid: 07af2c89671bda744a7cdea431f763e6
   - enabled: 1
     path: Assets/Nin_Work_folder/Scene/Scence_Village.unity
@@ -36,10 +36,10 @@ EditorBuildSettings:
     path: Assets/Nin_Work_folder/Scene/Scence_Lab.unity
     guid: c0ed40f619be2414593cb0d13b5c1464
   - enabled: 1
-    path: Assets/Da_Work_Folder/Da_Scenes/Death_Scene.unity
+    path: Assets/Da/Da_Work_Folder/Da_Scenes/Death_Scene.unity
     guid: 8280a26fa4e0a2d4f924d36a6bd494f6
   - enabled: 1
-    path: Assets/Da_Work_Folder/Da_Scenes/Demo_end.unity
+    path: Assets/Da/Da_Work_Folder/Da_Scenes/Demo_end.unity
     guid: f899a8a1d57851a4ea62827c30a2a3eb
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
